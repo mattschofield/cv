@@ -1,0 +1,222 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$fontsize$, a4paper]{article}
+
+\newcommand*\varhrulefill[1][0.4pt]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
+
+\newenvironment{headerFont}{\fontfamily{ugq>}\selectfont}{\par}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*,itemsep=0.01ex,topsep=0pt}
+
+% LAYOUT
+%--------------------------------
+% Margins
+
+\usepackage{lipsum}
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+\newcommand\textline[3][t]{%
+  \noindent\parbox[#1]{.5\textwidth}{\raggedright\texttt{} #2}%
+  \parbox[#1]{.5\textwidth}{\raggedleft{\emph{#3}}}\par\smallskip%
+}
+
+\usepackage{geometry}
+\geometry{$geometry$}
+
+% Do not indent paragraphs
+\setlength\parindent{0in}
+
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+
+% LANGUAGE
+%--------------------------------
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{txfonts}
+\usepackage{avant}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+% Cool ampersand
+% \newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+% MARGIN NOTES
+%--------------------------------
+\usepackage{marginnote}
+\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+%--------------------------------
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\rmfamily\mdseries}
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+
+% PDF SETUP
+%--------------------------------
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={$name$'s Vita},pdfauthor={$name$}]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+
+\begin{centering}
+
+{\LARGE $name$}\\
+
+
+% $for(address)$
+% $address$\\
+% $endfor$
+
+\vspace{10pt}
+
+$phone$\\
+$email$
+
+$for(urls)$
+  $urls$
+$endfor$
+
+\end{centering}
+
+
+% \vfill
+\vspace{-3em}
+
+
+% $intro$
+
+% \section*
+% \noindent\varhrulefill[0.6mm]\\
+% \textbf{\scriptsize \uppercase{skills}}
+% \begin{itemize}[topsep=4pt]
+%   $for(skills)$
+%     \item $skills$
+%   $endfor$
+% \end{itemize}
+% \vspace{-2em}
+
+% \vfill
+
+\section*
+\noindent\varhrulefill[0.6mm]\\
+\textbf{\scriptsize \uppercase{experience}}\\
+\noindent\\
+$for(experience)$
+  \noindent\note{$experience.years$}\textline[]{\large $experience.employer$}{$experience.job$}
+  \hspace{0pt}
+  \texttt{\scriptsize \uppercase{$experience.city$}}
+  \vspace{10pt}
+  \begin{itemize}
+    $for(experience.achievements)$
+      \item $experience.achievements$
+    $endfor$
+    \\
+  \end{itemize}
+$endfor$
+
+
+\subsection*
+\noindent\varhrulefill[0.6mm]\\
+\textbf{\scriptsize \uppercase{technologies of choice}}\\
+\begin{itemize}
+  $for(technologies)$
+    \item $technologies$
+  $endfor$
+\end{itemize}
+
+
+\section*
+\noindent\varhrulefill[0.6mm]\\
+\textbf{\scriptsize \uppercase{education}}\\
+\noindent\\
+$for(education)$
+  \note{$education.year$}{\large $education.subject$}
+  $if(education.degree)$
+    , $education.degree$
+  $endif$
+
+  \emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\
+  $if(education.grade)$
+    $education.grade$\\
+  $endif$
+  \begin{itemize}
+    $for(education.classes)$
+      \item $education.classes$
+    $endfor$
+  \end{itemize}
+$endfor$
+\vspace{-1em}
+
+\subsection*
+\noindent\varhrulefill[0.6mm]\\
+\textbf{\scriptsize \uppercase{interests}}\\
+% \noindent\\
+\begin{itemize}
+  $for(interests)$
+    \item $interests$
+  $endfor$
+\end{itemize}
+\vspace{-1em}
+
+$if(languages)$
+  \subsection*
+  \noindent\varhrulefill[0.6mm]\\
+  \textbf{\scriptsize \uppercase{languages}}\\
+  % \vspace{-2em}
+  \begin{itemize}
+    $for(languages)$
+      \item \emph{$languages.language$} ($languages.proficiency$)
+    $endfor$
+  \end{itemize}
+$endif$
+\vspace{-1em}
+
+$if(oss)$
+  \subsection*
+  \noindent\varhrulefill[0.6mm]\\
+  \textbf{\scriptsize \uppercase{open source software}}\\
+  \noindent\\
+  $for(oss)$
+    \noindent {\large $oss.name$}\\
+    \hspace{0pt}
+    \texttt{\scriptsize $oss.url$}
+    \vspace{4pt}
+    \begin{itemize}[label=]
+      $for(oss.description)$
+        \item $oss.description$
+      $endfor$
+      \\
+    \end{itemize}
+  $endfor$
+$endif$
+\vspace{-1em}
+
+\subsection*
+\noindent\varhrulefill[0.6mm]\\
+\textbf{\scriptsize \uppercase{references available upon request}}\\
+
+\end{document}

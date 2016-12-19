@@ -1,0 +1,108 @@
+---
+# Personal details
+name: Matt Schofield
+phone: "+44 7794 245 788"
+email: matt.schofield.102@gmail.com
+
+# Insert URLs without http://
+urls:
+- github.com/mattschofield
+
+# Sections
+
+skills:
+- Complexity, Algorithms, Programming, Architecture
+- Strategy, Design, Distributed Systems
+
+technologies:
+- JavaScript, Go, Ruby on Rails, AWS, Unix, Redis, React, \LaTeX
+
+experience:
+- years: 2015--present
+  employer: Credit Kudos
+  job: Founder & Chief Technology Officer
+  city: London
+  achievements:
+  - Responsible for product development, software architecture and data engineering
+  - Adopted "Privacy by Design" and other Data Protection standards
+  - Redesigned network infrastructure for high security
+  - Codified and built necessary procedures and controls for applying for ISO27001 certification and FCA authorisation
+- years: 2013--2015
+  employer: Universal Music Group
+  job: Manager, Digital Development and Tools
+  city: London
+  achievements:
+  - Single-handedly designed and implemented robust 5000 LOC alerting service in Go
+  - Developed full-stack Javascript application for managing online profiles
+  - Implemented zero-infrastructure, data-driven emailer service in AWS Lambda
+  - Built several Cassandra- and Redis-backed Node.js analytics APIs
+- years: 2013--2015
+  employer: Spinnup
+  job: Chief Technology Officer
+  city: London
+  achievements:
+  - Effectively led several remote development teams
+  - Oversaw successful migration from standalone hosting to AWS cloud
+  - Redesigned software stack for cloud environment
+- years: 2011--2013
+  employer: Universal Music Group
+  job: Technology Intern
+  city: London
+  achievements:
+  - Developed Ruby process to import iTunes EPF data.
+  - Implemented data mining model to explore artist associations.
+  - Contributed to one of the first Spotify apps to have over 1m installations
+
+education:
+- year: 2009--2013
+  subject: Computer Science with Industrial Experience
+  institute: University of Manchester
+  grade: 1st Class Honours
+  classes:
+  - Advanced Algorithms, Understanding Programming Languages, User Experience
+  - Software Evolution, Data Integration & Analysis, Software Design with Patterns
+  - Compilers, Concurrency & Process Algebra
+# - year: 2007--2009
+#   subject: A-Levels
+#   institute: Aquinas College, Stockport
+#   grade:
+#   classes:
+#   - Maths (A), English Language (B), Chemistry (B)
+
+books:
+- title: Rework
+  author: Jason Fried, David Heinemeier Hansson
+- title: The Pragmatic Programmer
+  author: Andrew Hunt, David Thomas
+
+interests:
+- Music, Food, Languages, Technology, History, Football, Travel, Podcasts, Politics, Behavioural Economics, Strategy Games, Photography, Fantasy
+
+languages:
+- language: French
+  proficiency: Beginner
+- language: Italian
+  proficiency: Beginner
+- language: Swedish
+  proficiency: Novice
+
+oss:
+- name: FreeCycle
+  url: github.com/mattschofield/freecycle
+  description:
+  - A more modern rebuild of freecycle.org using Ruby on Rails, AWS and React.js.
+- name: Bike Spotting
+  url: github.com/JonNorman/bike-spotting
+  description:
+  - A data visualisation project for exploring the locations of Santander Cycles in London and plotting their usage throughout the day.
+- name: Knapsackery
+  url: github.com/mattschofield/knapsackery
+  description:
+  - An implementation of the multi-dimensional Knapsack problem, implemented in Go.
+
+# Settings
+mainfont: Hoefler Text
+fontsize: 12pt
+lang: English
+geometry: a4paper, textwidth=6in, textheight=10.5in, marginparsep=7pt, marginparwidth=.6in
+---
