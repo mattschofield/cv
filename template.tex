@@ -93,16 +93,11 @@ $endif$
 
 \begin{centering}
 
-{\LARGE $name$}\\
-
-
-% $for(address)$
-% $address$\\
-% $endfor$
+{\LARGE $name$}
 
 \vspace{10pt}
 
-$phone$\\
+$phone$
 $email$
 
 $for(urls)$
@@ -147,7 +142,6 @@ $for(experience)$
   \end{itemize}
 $endfor$
 
-
 \section*
 \noindent\varhrulefill[0.6mm]\\
 \textbf{\scriptsize \uppercase{technologies of choice}}\\
@@ -189,39 +183,6 @@ $endfor$
     \item $interests$
   $endfor$
 \end{itemize}
-\vspace{-1.5em}
-
-$if(languages)$
-  \subsection*
-  \noindent\varhrulefill[0.6mm]\\
-  \textbf{\scriptsize \uppercase{languages}}\\
-  % \vspace{-2em}
-  \begin{itemize}
-    $for(languages)$
-      \item \emph{$languages.language$} ($languages.proficiency$)
-    $endfor$
-  \end{itemize}
-$endif$
-\vspace{-1.5em}
-
-$if(oss)$
-  \subsection*
-  \noindent\varhrulefill[0.6mm]\\
-  \textbf{\scriptsize \uppercase{open source software}}\\
-  \noindent\\
-  $for(oss)$
-    \noindent {\large $oss.name$}\\
-    \hspace{0pt}
-    \texttt{\scriptsize $oss.url$}
-    \vspace{4pt}
-    \begin{itemize}[label=]
-      $for(oss.description)$
-        \item $oss.description$
-      $endfor$
-      \\
-    \end{itemize}
-  $endfor$
-$endif$
 \vspace{-1.5em}
 
 \subsection*

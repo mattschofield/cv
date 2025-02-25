@@ -1,71 +1,89 @@
 ---
 # Personal details
 name: Matt Schofield
-phone: "+44 (0) 7575 581 518"
-email: matt.schofield.102@gmail.com
+email: matt@schofield.team
 
 # Insert URLs without http://
 urls:
-- github.com/mattschofield
+  - mattschofield.co.uk
+  - github.com/mattschofield
 
 # Sections
 
 skills:
-- Complexity, Algorithms, Programming, Archistecture
-- Strategy, Design, Distributed Systems
+  - Complexity, Algorithms, Programming, Architecture
+  - Strategy, Design, Distributed Systems
 
 technologies:
-- JavaScript, Go, Ruby on Rails, AWS, GCP, Terraform, Unix, Redis, React, \LaTeX
+  - JavaScript, Go, Ruby on Rails, AWS, GCP, Terraform, Unix, Redis, React, \LaTeX
 
 experience:
-- years: 2015--2021
-  employer: Credit Kudos
-  job: Co-founder, Chief Technology Officer
-  city: London
-  achievements:
-  - Built and led the EDPR (Engineering/Design/Product/Research) team from 0 past Series-A
-  - Devised, implemented and ran hiring process for the EDPR organisation from 0-20, maintaining a culture of psychological safety and individual autonomy
-  - Built strong, collaborative and open engineering culture, with focus on long-term value, individual accountability and careful management of technical debt
-  - Crafted and ran effective performance management and progression framework, resulting in exceptionally-low attrition and high levels of productivity
-  - Designed and built network infrastructure for high security, adopting "Privacy by Design" and other Data Protection standards, making use of automation and infrastructure-as-code
-  - Codified and built necessary InfoSec procedures and controls for ISO27001 certification and FCA authorisation
-  - Led one of the first PSD2 third-party (TPP) engineering teams through the managed roll-out of Open Banking in the UK, integrating with and testing APIs offered by the UK's largest banks
-  - Represented the PSD2 third-party community on the Open Banking Technical Design Authority, alongside technical leaders in the largest UK banks
-- years: 2013--2015
-  employer: Universal Music Group
-  job: Manager, Digital Development and Tools
-  city: London
-  achievements:
-  - Single-handedly designed and implemented robust 5000 LOC alerting service in Go
-  - Developed full-stack Javascript application for managing online artist profiles
-  - Implemented zero-infrastructure, data-driven emailer service in AWS Lambda
-  - Built several Cassandra- and Redis-backed Node.js analytics APIs
-- years: 2013--2015
-  employer: Spinnup
-  job: Chief Technology Officer
-  city: London
-  achievements:
-  - Effectively led several remote development teams
-  - Oversaw successful migration from standalone hosting to AWS cloud
-  - Redesigned software stack for cloud environment
-- years: 2011--2013
-  employer: Universal Music Group
-  job: Technology Intern
-  city: London
-  achievements:
-  - Developed Ruby process to import iTunes EPF data
-  - Implemented data mining model to explore artist associations
-  - Contributed to one of the first Spotify apps to have over 1m installations
+  - years: 2023--present
+    employer: Family
+    job: Co-founder & Parent
+    city: Huntingdon
+    achievements:
+      - Fortunate enough to stop working for a while to start raising a family and giving my wife some space to start her business at home
+      - When I'm not hanging out with my son, I'll be writing, cooking, in the gym, reading, learning French or planning things for the future
+      - My most recent project has been kitting out an INEOS Grenadier for greenlaning and camping trips
+  - years: 2021--2023
+    employer: Surfboard (acq. Dialpad 2024)
+    job: Chief Technology Officer
+    city: London
+    achievements:
+      - First technical hire, brought founder's initial concept to version 1
+      - Built a highly cohesive and performant cross-functional team of engineers, designers and data scientists, many of whom were new to early stage startups
+      - Recognised a significant flaw in the inner-workings of our version 1 product and led the movement to remediate
+      - Revenue tripled in 6 months after a well-executed 3-month replatform to bring our product closer to our customer's desired experience
+      - Helped shape company direction and culture with Natasha, the founder, before the company was acquired in 2024
+  - years: 2015--2021
+    employer: Credit Kudos (acq. Apple 2022)
+    job: Co-founder, Chief Technology Officer
+    city: London
+    achievements:
+      - Built and led the EDPR (Engineering/Design/Product/Research) team from 0 past Series-A
+      - Devised, implemented and ran hiring process for the EDPR organisation from 0-20, maintaining a culture of psychological safety and individual autonomy
+      - Built strong, collaborative and open engineering culture, with focus on long-term value, individual accountability and careful management of technical debt
+      - Crafted and ran effective performance management and progression framework, resulting in exceptionally-low attrition and high levels of productivity
+      - Designed and built network infrastructure for high security, adopting "Privacy by Design" and other Data Protection standards, making use of automation and infrastructure-as-code
+      - Codified and built necessary InfoSec procedures and controls for ISO27001 certification and FCA authorisation
+      - Led one of the first PSD2 third-party (TPP) engineering teams through the managed roll-out of Open Banking in the UK, integrating with and testing APIs offered by the UK's largest banks
+      - Served the PSD2 third-party community on the Open Banking Technical Design Authority, alongside technical leaders in the largest UK banks
+  - years: 2013--2015
+    employer: Universal Music Group
+    job: Manager, Digital Tools
+    city: London
+    achievements:
+      - Single-handedly designed and implemented robust 5000 LOC alerting service in Go
+      - Developed full-stack Javascript application for managing online artist profiles
+      - Implemented zero-infrastructure, data-driven emailer service in AWS Lambda
+      - Built several Cassandra and Redis-backed Node.js analytics APIs
+  - years: 2013--2015
+    employer: Spinnup
+    job: Chief Technology Officer
+    city: London
+    achievements:
+      - Effectively led several remote development teams
+      - Oversaw successful migration from standalone hosting to AWS cloud
+      - Redesigned software stack for cloud environment
+  - years: 2011--2013
+    employer: Universal Music Group
+    job: Technology Intern
+    city: London
+    achievements:
+      - Developed Ruby process to import iTunes EPF data
+      - Implemented data mining model to explore artist associations
+      - Contributed to one of the first Spotify apps to have over 1m installations
 
 education:
-- year: 2009--2013
-  subject: Computer Science with Industrial Experience
-  institute: University of Manchester
-  grade: 1st Class Honours
-  classes:
-  - Advanced Algorithms, Understanding Programming Languages, User Experience
-  - Software Evolution, Data Integration & Analysis, Software Design with Patterns
-  - Compilers, Concurrency & Process Algebra
+  - year: 2009--2013
+    subject: Computer Science with Industrial Experience
+    institute: University of Manchester
+    grade: 1st Class Honours
+    classes:
+      - Advanced Algorithms, Understanding Programming Languages, User Experience
+      - Software Evolution, Data Integration & Analysis, Software Design with Patterns
+      - Compilers, Concurrency & Process Algebra
 # - year: 2007--2009
 #   subject: A-Levels
 #   institute: Aquinas College, Stockport
@@ -74,41 +92,41 @@ education:
 #   - Maths (A), English Language (B), Chemistry (B)
 
 books:
-- title: Rework
-  author: Jason Fried, David Heinemeier Hansson
-- title: The Pragmatic Programmer
-  author: Andrew Hunt, David Thomas
-- title: The Hard Thing About Hard Things
-  author: Ben Horowitz
-- title: High Output Management
-  author: Andrew Grove
-- title: An Elegant Puzzle; Systems of Engineering Management
-  author: Will Larson
+  - title: Rework
+    author: Jason Fried, David Heinemeier Hansson
+  - title: The Pragmatic Programmer
+    author: Andrew Hunt, David Thomas
+  - title: The Hard Thing About Hard Things
+    author: Ben Horowitz
+  - title: High Output Management
+    author: Andrew Grove
+  - title: An Elegant Puzzle; Systems of Engineering Management
+    author: Will Larson
 
 interests:
-- Music, Food, Languages, Psychology, Technology, Company-building, History, Football, Travel, Podcasts, Politics, Behavioural Economics, Strategy Games, Fantasy
+  - Music, Food, Languages, Psychology, Technology, Company-building, History, Football, Travel, Podcasts, Politics, Behavioural Economics, Strategy Games, Fantasy
 
 languages:
-- language: French
-  proficiency: Beginner
-- language: Italian
-  proficiency: Beginner
-- language: Swedish
-  proficiency: Novice
+  - language: French
+    proficiency: Beginner
+  - language: Italian
+    proficiency: Beginner
+  - language: Swedish
+    proficiency: Novice
 
 oss:
-- name: FreeCycle
-  url: github.com/mattschofield/freecycle
-  description:
-  - A more modern rebuild of freecycle.org using Ruby on Rails, AWS and React.js.
-- name: Bike Spotting
-  url: github.com/JonNorman/bike-spotting
-  description:
-  - A data visualisation project for exploring the locations of Santander Cycles in London and plotting their usage throughout the day.
-- name: Knapsackery
-  url: github.com/mattschofield/knapsackery
-  description:
-  - An implementation of the multi-dimensional Knapsack problem, implemented in Go.
+  - name: FreeCycle
+    url: github.com/mattschofield/freecycle
+    description:
+      - A more modern rebuild of freecycle.org using Ruby on Rails, AWS and React.js.
+  - name: Bike Spotting
+    url: github.com/JonNorman/bike-spotting
+    description:
+      - A data visualisation project for exploring the locations of Santander Cycles in London and plotting their usage throughout the day.
+  - name: Knapsackery
+    url: github.com/mattschofield/knapsackery
+    description:
+      - An implementation of the multi-dimensional Knapsack problem, implemented in Go.
 
 # Settings
 mainfont: Hoefler Text
@@ -116,3 +134,4 @@ fontsize: 11pt
 lang: en-GB
 geometry: a4paper, textwidth=6in, textheight=10.5in, marginparsep=7pt, marginparwidth=.6in
 ---
+
